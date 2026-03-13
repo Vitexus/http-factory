@@ -1,0 +1,20 @@
+Source: php-tuupola-http-factory
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/tuupola/http-factory
+Rules-Requires-Root: no
+
+Package: php-tuupola-http-factory
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-factory
+Description: Lightweight autodiscovering PSR-17 HTTP factories
+ Lightweight autodiscovering PSR-17 HTTP factory implementations.
+ Provides factories for creating PSR-7 HTTP messages using
+ available PSR-7 implementations.
